@@ -6,8 +6,9 @@
     text-decoration: none !important;
     box-sizing: border-box;
     list-style: none;
-    /* border: 1px solid red;  */
+    /* border: 1px solid red; */
 }
+
 .slider{
     height: 300px;
     margin: auto;
@@ -20,7 +21,7 @@
 .slider-track{
     display: flex;
     width: calc(250px*18);
-    animation: scroll 10s linear infinite;
+    animation: scroll 4s linear infinite;
 }
 .slide{
     height: 200px;
@@ -722,9 +723,6 @@
 .col_brdr{
     border-bottom: 1px dotted  #000000;
 }
-.col_rgt_brdr{
-    border-right: 1px dotted #000000;
-}
 @media (max-width: 1200px) {
     label[for="menuicon"] {
       cursor: pointer;
@@ -799,12 +797,12 @@
         top: 15%;
         border-radius: 40px 40px  40px 40px;
         right: 5%;
-        height: 38%;
+        height: 45%;
     }
     .box_5 {
         border-radius: 40px 40px 40px 40px;
         left: 5%;
-        top: 60% !important;
+        top: 60%;
         height: 48%;
     }
     .box_6 {
@@ -824,11 +822,11 @@
         padding-bottom: 0 !important;
     }
     .pt30 {
-        padding-top: 30px;
+        margin-top: -30%;
         margin-left: 15px;
     }
     .pt90 {
-        padding-top: 65px;
+        margin-top: -27%;
         margin-left: 5px;
     }
     .ml120{
@@ -848,7 +846,7 @@
         margin-left: 5%;
     }
     .ml20{
-        margin-left: 8% !important;
+        margin-left: 8% ;
     }
     .mt_10{
         margin-top: 15px;
@@ -863,7 +861,7 @@
     }
     .mt_15 {
         margin-left: 1%;
-       margin-top: 10% !important;
+       margin-top: 10%;
     }
     .mt_img2 {
         margin-top: 115px;
@@ -985,19 +983,25 @@
         margin-top: 100px;
         margin-left: 26%;
     }
+    .col_btm_br{
+        border-bottom: 1px dotted #000000;
+    }
 }
 @media (min-width:576px) {
-    .col_rgt_nn{
-        border-right: none;
+    .col_btm_br{
+        border-bottom: none;
     }
-    .col_brdr_rgt{
-        border-right: 1px dotted #000000;
-    }
-    .col_brdr1{
-        border-right: 1px dotted #000000;
-    }
-    .col_brdr2{
+    .col_bttm_br{
         border-bottom: 1px dotted #000000;
+    }
+    .col_rgt_br_2{
+        border-right: 1px dotted #000000;
+    }
+    .col_rgt_br_3{
+        border-right: 1px dotted #000000;
+    }
+    .mt_20 {
+        margin-top: unset;
     }
     .ds_none{
         display: none;
@@ -1021,7 +1025,7 @@
     }
     .mt_15 {
         margin-left: 1%;
-        margin-top: 8% !important;
+        margin-top: 8% ;
     }
     .ml130 {
         margin-left: 8%;
@@ -1055,39 +1059,89 @@
         margin-top: 100px;
         margin-left: 30%;
     }
-    }
+}
  @media (min-width:768px) {
-        .col_brdr_rgt{
-            border: none;
-        }
-        .col_brdr2{
-            border: none;
-        }
-        .col_brdr3{
-            border-right: 1px dotted #000000;
+    .col_rgt_bdr_1{
+        border-right: 1px dotted #000000;
+    }
+    .col_btm_br{
+        border-bottom: none;
+    }
+    .col_rgt_br{
+        border-right: none;
+    }
+    .col_rgt_br_3{
+        border-right: none;
+    }
+        .ds_flex{
+        display: unset;
         }
         .col_brdr{
             border-bottom: 1px dotted #000000;
         }
-        .col_rgt_nn{
-            border-right: 1px dotted #000000;
-        }
         .box_4 {
-            top: 30%;
+            top: 40%;
             border-radius: 40px 0 0 40px;
-            height: 55%;
+            height: 70%;
             right: 0;
         }
         .pt30 {
-            padding-bottom: 100px;
-            margin-left: 15px;
+            margin-top: -16%;
+            margin-left: 15%;
         } 
         .pt90 {
-            padding-top: 29px;
+            margin-top: -25%;
             margin-left: 10px;
         }
+        .ml120 {
+            margin-left: 15%;
+        }
+        .ml135 {
+            margin-left: 18%;
+        }
+        .box_5 {
+            border-radius: 40px 40px 40px 40px;
+            left: 5%;
+            top: 35%;
+            height: 75%;
+        }
+        .mt_01 {
+            margin-top: 50%;
+            margin-left: 5%;
+        }
+        .ml17 {
+            margin-top: 50%;
+            margin-left: 1%;
+        }
         .mt_img1{
-            margin-bottom: 35%;
+            margin-top: -170%;
+        }
+        .img_2{
+            padding-bottom: 50%;
+        }
+        .img_3{
+            margin-top: -150%;
+        }
+        .box_6 {
+            width: 90%;
+            height: 100%;
+            border-radius: 40px 40px 40px 40px;
+            right: 5%;
+            top: 10%;
+        }
+        .mt_10 {
+            margin-top: 12%;
+            margin-left: 5%;
+        }
+        .mt_15 {
+            margin-left: 1%;
+            margin-top: 13%;
+        }
+        .ml10 {
+            margin-left: 10%;
+        }
+        .ml20 {
+            margin-left: 12%;
         }
         .fnt_news {
             top: 10%;
@@ -1116,13 +1170,10 @@
             bottom: 8%;
             left: 40%;
         }
-    }
+}
 @media (min-width:992px) {
     .w_100{
         width: 30%;
-    }
-    .ds_flex{
-        display: flex;
     }
     .ds_none{
         display: unset;
@@ -1137,32 +1188,42 @@
         width: 90%;
         height: 365px;
         border-radius: 40px 0  0 40px;
-        top: 53%;
+        top: 48%;
         z-index: -1;
         right: 0;
     }
+    .mt_img1 {
+        margin-top: -106%;
+    }
     .pt30 {
-        padding-bottom: 1%;
+        margin-top: 1%;
         margin-left: 17%;
     }
     .pt90{
-        padding-top: 7%;
+        margin-top: 0%;
         padding-left: 20px;
     }
     .box_5{
+        position: absolute;
         width: 90%;
-        height: 365px;
+        height: 75%;
         border-radius: 0 40px 40px 0;
         left: 0;
-        top: 35%;
+        top: 28% ;
     }
     .box_6{
         width: 90%;
-        height: 365px;
+        height: 100%;
         border-radius: 40px 0 0 40px;
         right: 0;
-        top: 35%;
+        top: 22%;
      }
+     .img_2 {
+        padding-bottom: 15%;
+    }
+    .img_3 {
+        margin-top: -90%;
+    }
     .ml120{
         margin-left: 120px;
     }
@@ -1173,15 +1234,15 @@
         margin-top: 180px;
     }
     .mt_01{
-        margin-top: 30px;
+        margin-top: 1%;
         margin-left: 0;
     }
     .mt15{
-        margin-top: 40px !important;
+        margin-top: 40px;
         margin-left: 10px;
      }
      .ml10{
-        margin-left: 100px;
+        margin-left: 1%;
      }
      .mt260{
         margin-top: 150px;
@@ -1191,21 +1252,24 @@
         margin-top: 0;
     }
     .mt_10{
-        margin-top: 5%;
-        margin-left: 4%;
+        margin-top: 18%;
+        margin-left: 18%;
     }
     .mt_15 {
-        margin-top: 30px;
+        margin-top: 25% ;
         margin-left: 10px;
      }
+     .ml17{
+        margin-top: 5%;
+     }
      .ml11{
-            margin-left: 5%;
+            margin-left: 20%;
      }
      .ml20{
-        margin-left: 120px;
+        margin-left: 4%;
     }
     .ml130{
-        margin-left: 9%;
+        margin-left: 22%;
     }
     .img_pstn_8{
         position: absolute;
@@ -1250,8 +1314,8 @@
     }
     .fnt_news{
         position: absolute;
-        top: 25%;
-        left: 15%;
+        top: 30%;
+        left: 17%;
     }
     .box_2{
         width: 95%;
@@ -1267,13 +1331,13 @@
         margin-left: 200px;
     }
     .form-control {
-        width: 670px;
+        width: 490px;
         padding: 10px 10px 10px 40px ;
         border-radius: 1px;
-        margin-left: 0%;
+        margin-left: -10%;
     }
     .btn {
-        margin-left: 10px;
+        margin-left: -35px;
         width: 100px;
         height: 45px;
         border: none;
@@ -1300,4 +1364,48 @@
     .ds_block{
         display: block;
      }
+}
+@media (min-width:1200px) {
+    .mt_img1 {
+        margin-top: -65%;
     }
+    .img_3 {
+        margin-top: -60%;
+    }
+    .box_4 {
+        top: 55%;
+    }
+    .box_5 {
+        top: 45%;
+    }
+    .box_6 {
+        top: 30%;
+    }
+    .img_pstn10 {
+        margin-left: 45%;
+    }
+    .img_pstn14 {
+        margin-left: 30%;
+    }
+    .img_pstn17 {
+        margin-top: 18%;
+        margin-left: 10%;
+    }
+    .fnt_news {
+        top: 23%;
+        left: 8%;
+    }
+    .txt_mrgn{
+        margin-left: 40%;
+    }
+    .txt_mrgn1{
+        margin-right: 25%;
+    }
+    .fnt_news {
+        top: 29%;
+        left: 22%;
+    }
+    .form-control {
+        width: 680px;
+    }
+}
