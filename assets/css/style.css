@@ -77,15 +77,15 @@
 .bcg_hdr{
     background-color: #D2DA60;
 }
-.home{
-    color: #9003E5;
-    font-family: 'Poppins';
-    font-weight: 600;
-}
 .nav_lnk{
     color: #9003E5;
     font-family: 'Poppins';
     font-weight: 400;
+}
+.nav_lnk:hover{
+    color: #9003E5;
+    font-family: 'Poppins';
+    font-weight: 600;
 }
 .bcg_img{
     background-image: url("/assets/img/png/home1.png");
@@ -271,7 +271,8 @@
     transform: scale(1.1);
 }
 .form-control {
-        width: 670px;
+        max-width: 670px;margin-left: auto;
+        margin-right: auto;
         padding: 10px 10px 10px 40px ;
         border-radius: 1px;
 }
@@ -632,7 +633,7 @@
 }
 .mt100{
     margin-top: 100px;
-    margin-left: 200px;
+  
 }
 .img_hover {
     position: relative;
@@ -723,6 +724,12 @@
 .col_brdr{
     border-bottom: 1px dotted  #000000;
 }
+.line{
+    width: 100%;
+    height: 3px;
+    color: #fff;
+
+}
 @media (max-width: 1200px) {
     label[for="menuicon"] {
       cursor: pointer;
@@ -794,20 +801,20 @@
         height: 90%;
     }
     .box_4 {
-        top: 15%;
+        top: 14%;
         border-radius: 40px 40px  40px 40px;
         right: 5%;
-        height: 45%;
+        height: 50%;
     }
     .box_5 {
         border-radius: 40px 40px 40px 40px;
         left: 5%;
-        top: 60%;
-        height: 48%;
+        top: 49%;
+        height: 57%;
     }
     .box_6 {
         width: 90%;
-        height: 45%;
+        height: 49%;
         border-radius: 40px 40px 40px 40px;
         right: 5%;
         top: 0%;
@@ -947,7 +954,7 @@
         margin-right: auto;
     }
     .fnt_news{
-        top: 5%;
+        top: 8%;
         left: 15%;
     }
     .mt_5{
@@ -960,34 +967,34 @@
         margin-top: 4%;
     }
     .form-control {
-        margin-left: -170%;
-        width: 250%;
+        
+        width: 100%;
         padding: 10px 10px 10px 40px;
         border-radius: 1px;
     }
-    .btn{
-        margin-right: 5%;
+    .flex-clmn{
+        flex-direction: column;
     }
     .mt_img{
         margin-top: 50px;
     }
     .img_pstn10 {
         margin-top: 100px;
-        margin-left: 26%;
     }
     .img_pstn14 {
         margin-top: 100px;
-        margin-left: 26%;
     }
     .img_pstn17 {
         margin-top: 100px;
-        margin-left: 26%;
     }
     .col_btm_br{
         border-bottom: 1px dotted #000000;
     }
 }
 @media (min-width:576px) {
+    .flex-clmn{
+        flex-direction: unset;
+    }
     .col_btm_br{
         border-bottom: none;
     }
@@ -1039,13 +1046,14 @@
         left: 18%;
     }
     .form-control {
-        margin-left: -90%;
-        width: 200%;
+        margin-left: 10%;
+        width: 100%;
         padding: 10px 10px 10px 40px;
         border-radius: 1px;
     }
     .btn {
         margin-right: 20%;
+        margin-bottom: 3%;
     }
     .img_pstn10 {
         margin-top: 100px;
@@ -1148,10 +1156,14 @@
             left: 15%;
         }
         .form-control {
-            margin-left: -45%;
+            margin-left: -10%;
             width: 150%;
             padding: 10px 10px 10px 40px;
             border-radius: 1px;
+        }
+        .btn {
+            margin-right: 20%;
+            margin-bottom: 3%;
         }
         .img_pstn10 {
             margin-top: 100px;
@@ -1328,7 +1340,7 @@
     }
     .mt100{
         margin-top: 100px;
-        margin-left: 200px;
+       
     }
     .form-control {
         width: 490px;
@@ -1366,11 +1378,18 @@
      }
 }
 @media (min-width:1200px) {
+    .pt90 {
+        margin-top: 3%;
+        padding-left: 5px;
+    }
+    .mt_15 {
+        margin-top: 23%;
+    }
     .mt_img1 {
         margin-top: -65%;
     }
     .img_3 {
-        margin-top: -60%;
+        margin-top: -1%;
     }
     .box_4 {
         top: 55%;
@@ -1379,7 +1398,7 @@
         top: 45%;
     }
     .box_6 {
-        top: 30%;
+        top: 35%;
     }
     .img_pstn10 {
         margin-left: 45%;
@@ -1390,10 +1409,6 @@
     .img_pstn17 {
         margin-top: 18%;
         margin-left: 10%;
-    }
-    .fnt_news {
-        top: 23%;
-        left: 8%;
     }
     .txt_mrgn{
         margin-left: 40%;
@@ -1406,6 +1421,11 @@
         left: 22%;
     }
     .form-control {
-        width: 680px;
+        width: 200%;
+        margin-left: 1%;
+    }
+    .btn {
+        margin-right: 20%;
+        margin-bottom: 2%;
     }
 }
