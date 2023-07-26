@@ -7,6 +7,13 @@
     box-sizing: border-box;
     list-style: none;
 }
+#preloader{
+    background: #000 url("/assets/img/png/redblock.gif") no-repeat center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
 .slider{
     height: 300px;
     display: grid;
@@ -1335,7 +1342,7 @@ button {
         margin-top: -90%;
     }
     .ml120{
-        margin-left: 120px;
+        margin-left: 10%;
     }
     .ml135{
         margin-left: 135px;
@@ -1558,5 +1565,23 @@ button {
     .btn {
         margin-right: 25%;
         margin-bottom: 1.4%;
+    }
+    .ml120{
+        margin-left: 30%;
+    }
+    .ml135 {
+        margin-left: 32%;
+    }
+    .ml10 {
+        margin-left: 15%;
+    }
+    .ml20 {
+        margin-left: 17%;
+    }
+    .ml11 {
+        margin-left: 33%;
+    }
+    .ml130 {
+        margin-left: 35%;
     }
 }   
