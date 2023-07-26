@@ -1259,6 +1259,9 @@ button {
         }
 }
 @media (min-width:992px) {
+    .ds_block{
+        display: unset;
+    }
     .img_pstn18{
         position: absolute;
         left: 0;
@@ -1323,7 +1326,7 @@ button {
     .box_5{
         position: absolute;
         width: 90%;
-        height: 75%;
+        height: 78%;
         border-radius: 0 40px 40px 0;
         left: 0;
         top: 28% ;
@@ -1342,10 +1345,10 @@ button {
         margin-top: -90%;
     }
     .ml120{
-        margin-left: 10%;
+        margin-left: 38%;
     }
     .ml135{
-        margin-left: 135px;
+        margin-left: 40%;
     }
     .mt250{
         margin-top: 180px;
