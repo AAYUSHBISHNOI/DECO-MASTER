@@ -7,6 +7,9 @@
     box-sizing: border-box;
     list-style: none;
 }
+ol, ul {
+    padding-left: 0;
+}
 #preloader{
     background: #000 url("/assets/img/png/redblock.gif") no-repeat center;
     height: 100vh;
@@ -14,7 +17,7 @@
     position: fixed;
     z-index: 100;
 }
-.slider{
+.slider{    
     height: 300px;
     display: grid;
     overflow: hidden;
